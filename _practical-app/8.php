@@ -17,16 +17,24 @@
 	
 	<?php  
 
-	/*  Step 1 -Make a variable with some text as value
+	/*  
+	 *	--------------------------------------------------
+	 *	Step 1 -Make a variable with some text as value
+	 *
+	 *	Step 2 - Use crypt() function to encrypt it
+	 * 
+	 *	Step 3 - Assign the crypt result to a variable
+	 * 
+	 *	Step 4 - echo the variable
+	 */
 
-		Step 2 - Use crypt() function to encrypt it
+	$string = 'imAnAwesomeProgrammer';
+	$salt = "imAReallyAwesomeProgrammer"; 
 
-		Step 3 - Assign the crypt result to a variable
+	$encrypt_string = crypt($string, $salt);
 
-		Step 4 - echo the variable
+	echo $encrypt_string;
 
-	*/
-	
 	?>
 
 
