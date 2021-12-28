@@ -34,7 +34,7 @@
 			die("Connection FAILED");
 		}
 
-		$query = "SELECT * FROM athletes";
+		$query = "SELECT * FROM athletes ";
 		
 		$result = mysqli_query($connection, $query);
 		if ( !$result ) {
@@ -43,6 +43,7 @@
 
 		while( $row = mysqli_fetch_assoc($result) ) {
 			print_r($row);
+			echo $row["name"];
 		}
 
 		?>
